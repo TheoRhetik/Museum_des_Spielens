@@ -1,0 +1,130 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #C00000;
+    color: white;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.header-text {
+    display: flex;
+    flex-direction: column;
+}
+header img {
+    height: 70px;
+    margin-right: 20px;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 28px;
+    letter-spacing: 1px;
+}
+
+header h4 {
+    background-color: #C00000;
+    color: white;margin: 0;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+nav {
+    background-color: #900000;
+    color: white;
+    padding: 10px 20px;
+    font-size: 14px;
+}
+
+nav span {
+    margin-right: 20px;
+    cursor: default;
+}
+
+.container {
+    display: flex;
+    padding: 20px;
+}
+
+.sidebar {
+    width: 250px;
+    background-color: white;
+    padding: 20px;
+    border-right: 3px solid #C00000;
+}
+
+.sidebar h3 {
+    margin-top: 0;
+    color: #C00000;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar li {
+    padding: 8px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.main {
+    flex: 1;
+    background-color: white;
+    margin-left: 20px;
+    padding: 30px;
+    min-height: 500px;
+    border: 2px dashed #C00000;
+}
+
+.main h2 {
+    color: #C00000;
+    margin-top: 0;
+}
+
+.footer {
+    text-align: center;
+    padding: 15px;
+    font-size: 12px;
+    color: #666;
+}
+
+.post {
+    border: 1px solid #ddd;
+    border-left: 4px solid #C00000;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: white;
+}
+
+.post-header {
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+.username {
+    font-weight: bold;
+    color: #C00000;
+}
+
+.time {
+    float:right;
+    color:#777;
+    font-size:13px;
+}
+
+.post-image {
+    max-width: 100%;
+    margin-top: 10px;
+}
+
+.post-actions{
+    margin-top:10px;
+    padding-top:8px;
+    border-top:1px solid #eee;
+}
