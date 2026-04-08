@@ -5,23 +5,7 @@
 <title>Museum des Spielens – Museum 2.0</title>
 <link rel="stylesheet" href="style.css">
 
-</head>
-
-<body>
-
-<div id="header"></div>
-
-<script>
-fetch("header.html")
-  .then(res => res.text())
-  .then(data => document.getElementById("header").innerHTML = data);
-</script>
-
-<div class="container">
-
-    <script>
-
-   <style>
+<style>
 .login-box {
     max-width: 400px;
     margin: 80px auto;
@@ -42,6 +26,7 @@ fetch("header.html")
     padding: 10px;
     margin: 10px 0;
     border: 1px solid #ccc;
+    box-sizing: border-box;
 }
 
 .login-box button {
@@ -62,10 +47,17 @@ fetch("header.html")
     display: none;
 }
 </style>
-
 </head>
 
 <body>
+
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("header").innerHTML = data);
+</script>
 
 <div class="login-box">
     <h2>Login</h2>
@@ -78,11 +70,16 @@ fetch("header.html")
     <div class="error" id="errorMsg">Zugangsdaten falsch.</div>
 </div>
 
-<script>
+<div class="footer">
+    Museum des Spielens – Entwicklung • Kultur • Lernen • Bedeutung
+</div>
 
+<script>
 function login() {
     let user = document.getElementById("username").value;
     let pw = document.getElementById("password").value;
+
+    document.getElementById("errorMsg").style.display = "none";
 
     if (user === "kurator" && pw === "spielkultur") {
         window.location.href = "backoffice.html";
@@ -90,15 +87,7 @@ function login() {
         document.getElementById("errorMsg").style.display = "block";
     }
 }
-
 </script>
-
-
-<div class="footer">
-    Museum des Spielens – Entwicklung • Kultur • Lernen • Bedeutung
-</div>
-
-
 
 </body>
 </html>
