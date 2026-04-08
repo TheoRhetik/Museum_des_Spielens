@@ -237,6 +237,36 @@ nav a:hover {
     background-color: #eee;
     color: #C00000;
 }
+
+    .info-icon {
+    position: relative;
+    cursor: pointer;
+    margin-left: 6px;
+    font-size: 12px;
+}
+
+.tooltip {
+    visibility: hidden;
+    width: 220px;
+    background-color: #333;
+    color: white;
+    text-align: left;
+    padding: 8px;
+    border-radius: 6px;
+
+    position: absolute;
+    bottom: 125%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    font-size: 12px;
+    line-height: 1.4;
+    z-index: 10;
+}
+
+.info-icon:hover .tooltip {
+    visibility: visible;
+}
     
 </style>
 </head>
@@ -303,6 +333,13 @@ nav a:hover {
     </div>
     <div class="stat-row">
         <div class="stat-label">Auswahl individueller Audio-Guides</div>
+    <span class="info-icon">
+        ℹ️
+        <span class="tooltip">
+            Die NutzerInnen haben hier die Möglichkeit, sich zu jedem Exponat einen Audio-Guide auszuwählen, der am ehesten zu ihrer eigenen Deutung des Exponates passt.
+        </span>
+    </span>
+</div>
         <div class="stat-bar-bg">
             <div class="stat-bar" data-value="89">89</div>
         </div>
