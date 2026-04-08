@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Museum des Spielens – Museum 2.0</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("header").innerHTML = data);
+</script>
+
+    <div class="main">
+        <div class="main">
+    <h2>Exponate</h2>
+    <p class="section-intro">
+        Eine Auswahl klassischer Spiele und Spielzeuge aus der Sammlung des Museums.
+    </p>
+
+    <div class="exhibits-grid">
+
+        <div class="exhibit-card">
+            <img src="images/blechkreisel.png"; alt="Kreisel">
+            <h3>Kreisel</h3>
+            <p>Traditionelles Geschicklichkeitsspielzeug.</p>
+        </div>
+
+        <div class="exhibit-card">
+            <img src="images/rubiks.jpg" alt="Zauberwürfel">
+            <h3>Zauberwürfel</h3>
+            <p>Logikspiel und Kultobjekt seit den 1980er Jahren.</p>
+        </div>
+
+        <div class="exhibit-card">
+            <img src="images/mensch2.jpg" alt="Mensch ärgere dich nicht">
+            <h3>Mensch ärgere dich nicht</h3>
+            <p>Klassisches Brettspiel für Familien und Gruppen.</p>
+        </div>
+
+        <div class="exhibit-card">
+            <img src="images/barbie_free.png" alt="Barbie">
+            <h3>Barbie</h3>
+            <p>Puppe als Spielzeug, Rollenbild und Kulturphänomen.</p>
+        </div>
+
+        <div class="exhibit-card">
+            <img src="images/marbels_free.jpg" alt="Murmeln">
+            <h3>Murmeln</h3>
+            <p>Spielmaterial mit langer kulturgeschichtlicher Tradition.</p>
+        </div>
+
+        <div class="exhibit-card">
+            <img src="images/lego_free.jpg" alt="Lego">
+            <h3>Lego</h3>
+            <p>Konstruktionsspielzeug zwischen Kreativität und System.</p>
+        </div>
+
+    </div>
+</div>
+
+<div class="footer">
+    Museum des Spielens – Entwicklung • Kultur • Lernen • Bedeutung
+</div>
+
+
+
+</body>
+</html>
