@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<title>Museum des Spielens – Museum 2.0</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<div id="header"></div>
+
+<script>
+fetch("header.html")
+  .then(res => res.text())
+  .then(data => document.getElementById("header").innerHTML = data);
+</script>
+
+<div class="container">
+
+    <div class="main">
+        <h2>Besucherbeiträge</h2>
+        <p style="color:#999;">
+            (Hier werden die interaktiven Beiträge der Besucher angezeigt.)
+        </p>
+
+        <!-- 
+        HIER FÜGST DU DEINE "POSTS" EIN
+        z.B. als Karten, Kommentare, Screenshots etc.
+        -->
+<div class="post">
+
+  <div class="post-header">
+      <span class="username">Quadratschädel</span>
+      <span class="time">07.03.2026 • 14:32</span>
+  </div>
+
+  <div class="post-content">
+      <p>Hier mein Beitrag zur digitalen Ausstellung: Der Rubik-Würfel des 21. Jahrhunderts - digital trifft analog. #rubikscube #zauberwürfel<p>
+
+      <img src="images/rubik.png" width="300" class="post-image">
+  </div>
+
+  <div class="post-actions">
+      <button class="like-btn" onclick="loginPrompt()">❤️ Like</button>
+      <button class="comment-btn" onclick="loginPrompt()">💬 Kommentieren</button>
+  </div>
+
+</div>
+
+<div class="footer">
+    Museum des Spielens – Entwicklung • Kultur • Lernen • Bedeutung
+</div>
+
+
+
+</body>
+</html>
