@@ -201,6 +201,42 @@ nav a:hover {
     color: #666;
 }
 
+.user-bar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 15px;
+    color: #999;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+
+/* Avatar + Name */
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.user-info img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* Logout-Button */
+.logout-btn {
+    text-decoration: none;
+    color: #999;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+
+.logout-btn:hover {
+    background-color: #eee;
+    color: #C00000;
+}
+    
 </style>
 </head>
 
@@ -218,10 +254,14 @@ nav a:hover {
     <span><a href="exponate.html">Exponate</a></span>
     <span><a href="community.html">Community</a></span>
 </nav>
-<p style="color:#999;"; align="right">
-    <span align="right"><img src="images/avatar.png" width="30">&nbsp; &nbsp; Theo Rhetik</span>
-    <span align="right"><a href="index.html">Logout</a></span>
-</p>
+<div class="user-bar">
+    <div class="user-info">
+        <img src="images/avatar.png" alt="Avatar">
+        <span class="username">Theo Rhetik</span>
+    </div>
+
+    <a href="index.html" class="logout-btn">Logout</a>
+</div>
     <div class="main">
         <h2>Willkommen, Theo Rhetik</h2>
     <h2>Statistiken</h2>
